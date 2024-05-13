@@ -31,7 +31,7 @@ li {
   margin-left: 0px;
   padding-left: 0px;
   font-size: large;
-  font-family: "Montserrat", sans-serif;
+  font-family: sans-serif;
 }
 
 a {
@@ -41,21 +41,31 @@ a {
 }
 
 .first-section {
-  display: ;
-  height: 800px;
+  display: flex;
+  flex-direction: column;
+  height: 700px;
   background-image: url(tacos-7709022.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
+  align-items: center;
 }
 
 .first-section h1 {
-  margin-top: 150px;
-  justify-content: center;
+  margin-top: 200px;
+  font-size: xx-large;
+  font-family: sans-serif;
 }
 
-.first-section p {
-  margin-top: 200px;
+.menu-button {
+  display: flex;
+  background-color: yellow;
+  width: 120px;
+  height: 45px;
+  border-radius: 30%;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
 }
 
 .img-section-pictures {
