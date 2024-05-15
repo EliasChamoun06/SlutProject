@@ -14,7 +14,7 @@ header {
 }
 
 .logo {
-  width: 35vh;
+  width: 30vh;
   padding: 0px;
   border-right: 50px;
 }
@@ -55,6 +55,14 @@ a {
   margin-top: 200px;
   font-size: xx-large;
   font-family: sans-serif;
+  color: black;
+  text-shadow: 3px 3px 6px antiquewhite;
+}
+
+.first-section h2 {
+  font-size: x-large;
+  color: black;
+  text-shadow: 3px 3px 6px antiquewhite;
 }
 
 .menu-button {
@@ -143,4 +151,22 @@ footer nav a:hover {
 
 .social-media a {
   margin: 0 10px;
+}
+
+.blank-space {
+  height: 5vh;
+}
+
+.menu-first-section {
+  display: flex;
+  height: 500px;
+  justify-content: center;
+  background-image: url(taco-menu.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.menu-first-section h1 {
+  font-size: 50px;
+  margin-top: 10%;
 }
