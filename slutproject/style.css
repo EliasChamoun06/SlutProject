@@ -161,12 +161,20 @@ footer nav a:hover {
   display: flex;
   height: 500px;
   justify-content: center;
+  align-items: center;
   background-image: url(taco-menu.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  flex-direction: column;
 }
 
 .menu-first-section h1 {
   font-size: 50px;
   margin-top: 10%;
+  text-shadow: 3px 3px 6px antiquewhite;
+}
+
+.menu-first-section h2 {
+  font-size: 30px;
+  text-shadow: 3px 3px 6px antiquewhite;
 }
