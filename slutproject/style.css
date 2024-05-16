@@ -44,7 +44,7 @@ a {
   display: flex;
   flex-direction: column;
   height: 700px;
-  background-image: url(tacos-7709022.jpg);
+  background-image: url(img/tacos-7709022.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
@@ -162,7 +162,7 @@ footer nav a:hover {
   height: 500px;
   justify-content: center;
   align-items: center;
-  background-image: url(taco-menu.jpg);
+  background-image: url(img/taco-menu.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   flex-direction: column;
@@ -182,9 +182,18 @@ footer nav a:hover {
 .menu-tacos {
   width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  margin-bottom: 5px;
+}
+
+.menu-tacos div h2 {
+  font-size: xx-large;
+}
+
+.taco {
+  margin: 0px;
+  padding: 10px;
 }
 
 .odd {
@@ -192,5 +201,5 @@ footer nav a:hover {
 }
 
 .even {
-  background-color: white;
+  background-color: rgb(255, 249, 249);
 }
