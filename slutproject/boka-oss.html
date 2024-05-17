@@ -2,10 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Document</title>
+
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <header>
       <ul>
@@ -14,49 +18,106 @@
             ><img src="img/project-logo.png" class="logo"
           /></a>
         </li>
+
         <li>
           <a href="mat-&-dryck.html">Mat & Dryck</a>
         </li>
+
         <li>
           <a href="nuvarande-plats.html">Nuvarande plats</a>
         </li>
+
         <li>
           <a href="boka-oss.html">Boka oss</a>
         </li>
+
         <li>
           <a href="jobba-hos-oss.html">Jobbas hos oss</a>
         </li>
+
         <li>
           <a href="recept.html">Recept</a>
         </li>
       </ul>
     </header>
 
-    <div class="main-body"></div>
+    <section class="contact-section">
+      <div class="form-container">
+        <form action="#">
+          <h2>Kontaka oss</h2>
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Vad du kontakar oss för:</label>
+            <select name="subject" id="subject" required>
+              <option value="">Välj ett av alternativen</option>
+              <option value="catering">Catering</option>
+              <option value="jobbansökan">Jobbansökan</option>
+              <option value="other">Övrigt</option>
+            </select>
+            <div class="form-group">
+              <label for="date">Datum (endast om du valt Catering):</label>
+              <input type="date" name="date" id="date" />
+            </div>
+            <div class="form-group">
+              <label for="quantity"
+                >Antal gäster (endast om du valt Catering):</label
+              >
+              <input type="number" />
+            </div>
+            <div class="form-group">
+              <label for="cv">CV (endast om du valt Jobbansökan):</label>
+              <input type="file" />
+            </div>
+            <div class="form-group">
+              <label for="text">Meddelande:</label>
+              <textarea name="text" id="text" rows="10"></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
 
     <footer>
       <p>© 2024 Taco Foodtruck. Alla rättigheter förbehållna.</p>
+
       <p>
         Kontakta oss för bokningar eller förfrågningar: Telefon: 123-456-789 |
         E-post: info@tacofoodtruck.com
       </p>
+
       <nav>
         <a href="about.html">Om oss</a>
+
         <a href="mat-&-dryck.html">Meny</a>
+
         <a href="contact.html">Kontakt</a>
       </nav>
+
       <div class="social-media">
         <a href="https://www.facebook.com" target="_blank"
           ><img src="img/facebook-logo.png" alt=""
         /></a>
+
         <a href="https://www.instagram.com" target="_blank"
           ><img src="img/Instagram_icon.png.webp" alt=""
         /></a>
+
         <a href="https://twitter.com" target="_blank"
           ><img src="img/twitter-logo.png" alt=""
         /></a>
       </div>
     </footer>
   </body>
+
   <script src="script.js"></script>
 </html>
