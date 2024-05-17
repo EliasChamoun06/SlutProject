@@ -1,4 +1,4 @@
-// Dropdown button - boka-oss.html
+// Dropdown button - Kontaka oss
 document.addEventListener("DOMContentLoaded", function () {
   var dropdownButton = document.querySelector(".dropdown-button");
   var dropdownContent = document.querySelector(".dropdown-content");

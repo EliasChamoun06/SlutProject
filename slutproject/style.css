@@ -7,16 +7,30 @@ body {
 header {
   display: flex;
   width: 100%;
-  height: 20vh;
+  height: 15vh;
   background-color: antiquewhite;
   position: fixed;
   top: 0;
+  z-index: 1;
+}
+
+header nav {
+  display: flex;
+  width: 100%;
+}
+
+.fa-solid,
+.fa-bars {
+  display: none !important;
 }
 
 .logo {
+  position: absolute;
+  top: -40px;
   width: 30vh;
   padding: 0px;
-  border-right: 50px;
+  margin-left: 50px;
+  margin-top: 0px;
 }
 
 ul {
@@ -24,6 +38,9 @@ ul {
   justify-content: space-evenly;
   align-items: center;
   width: 80%;
+  margin: 0px;
+  height: 20vh;
+  margin-left: 160px;
 }
 
 li {
@@ -52,15 +69,16 @@ a {
 }
 
 .first-section h1 {
-  margin-top: 200px;
+  margin-top: 150px;
   font-size: xx-large;
-  font-family: sans-serif;
+  font-family: "Lobster", cursive;
   color: black;
   text-shadow: 3px 3px 6px antiquewhite;
 }
 
 .first-section h2 {
   font-size: x-large;
+  font-family: "Lobster", cursive;
   color: black;
   text-shadow: 3px 3px 6px antiquewhite;
 }
@@ -76,12 +94,37 @@ a {
   font-size: larger;
 }
 
-.img-section-pictures {
+.img-section-div {
   width: 30%;
   height: auto;
 }
 
-.first-images {
+.img-section-pictures {
+  width: 100%;
+}
+
+.img-section-h2 {
+  position: absolute;
+  font-family: "Lobster", cursive;
+  text-shadow: 3px 3px 6px antiquewhite;
+}
+
+#img1 {
+  top: 875px;
+  left: 30%;
+}
+
+#img2 {
+  top: 890px;
+  left: 60%;
+}
+
+#img3 {
+  top: 875px;
+  left: 90%;
+}
+
+.image-section {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -172,9 +215,11 @@ footer nav a:hover {
   font-size: 50px;
   margin-top: 10%;
   text-shadow: 3px 3px 6px antiquewhite;
+  font-family: "Lobster", cursive;
 }
 
 .menu-first-section h2 {
+  font-family: "Lobster", cursive;
   font-size: 30px;
   text-shadow: 3px 3px 6px antiquewhite;
 }
@@ -183,11 +228,11 @@ footer nav a:hover {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
   margin-bottom: 5px;
 }
 
 .menu-tacos div h2 {
+  font-family: "Lobster", cursive;
   font-size: xx-large;
 }
 
@@ -232,9 +277,11 @@ footer nav a:hover {
   width: 100%;
   max-width: 400px;
   box-sizing: border-box;
+  margin-top: 100px;
 }
 
 form h2 {
+  font-family: "Lobster", cursive;
   margin-bottom: 20px;
   font-size: 24px;
   text-align: center;
@@ -280,4 +327,31 @@ button {
 
 button:hover {
   background-color: #0056b3;
+}
+
+@media screen and (max-width: 400px) {
+  ul {
+    display: none;
+  }
+
+  .fa-bars {
+    display: flex !important;
+    width: 50px;
+  }
+
+  .first-section h1 {
+    justify-content: center;
+  }
+
+  .image-section {
+    flex-direction: column;
+  }
+
+  .img-section-pictures {
+    width: 80%;
+  }
+
+  .last-section {
+    flex-direction: column-reverse;
+  }
 }
