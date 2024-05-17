@@ -40,6 +40,7 @@
             <a href="boka-oss.html">Kontakta oss</a>
           </li>
         </ul>
+
         <i class="fa-solid fa-bars"></i>
       </nav>
     </header>
@@ -57,9 +58,20 @@
           </h2>
         </div>
 
-        <div class="menu-tacos">
+        <div id="menu-tacos">
           <div class="taco-container">
-            <h2>Tacos</h2>
+            <div class="switch-spot">
+              <h2>Tacos</h2>
+              <div class="light-dark-mode">
+                <label class="switch">
+                  <input type="checkbox" id="toggleSwitch" />
+                  <span class="slider round"></span>
+                </label>
+                <div class="content">
+                  <p>Light/Dark mode</p>
+                </div>
+              </div>
+            </div>
 
             <div class="taco odd">
               <h3>Original Taco</h3>
@@ -155,8 +167,6 @@
       </p>
 
       <nav>
-        <a href="about.html">Om oss</a>
-
         <a href="mat-&-dryck.html">Meny</a>
 
         <a href="boka-oss.html">Kontakt</a>

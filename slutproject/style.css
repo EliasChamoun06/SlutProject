@@ -94,36 +94,6 @@ a {
   font-size: larger;
 }
 
-.img-section-div {
-  width: 30%;
-  height: auto;
-}
-
-.img-section-pictures {
-  width: 100%;
-}
-
-.img-section-h2 {
-  position: absolute;
-  font-family: "Lobster", cursive;
-  text-shadow: 3px 3px 6px antiquewhite;
-}
-
-#img1 {
-  top: 875px;
-  left: 30%;
-}
-
-#img2 {
-  top: 890px;
-  left: 60%;
-}
-
-#img3 {
-  top: 875px;
-  left: 90%;
-}
-
 .image-section {
   display: flex;
   justify-content: space-evenly;
@@ -136,6 +106,37 @@ a {
     rgba(226, 114, 91, 1) 67%,
     rgba(86, 130, 3, 1) 100%
   );
+  height: 250px;
+}
+
+.img-section-div {
+  display: flex;
+  width: 30%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img-section-pictures {
+  width: 100%;
+}
+
+.img-section-h2 {
+  font-family: "Lobster", cursive;
+  text-shadow: 3px 3px 6px antiquewhite;
+  margin-left: 10px;
+}
+
+#img1 {
+  background-image: url(img/birria-tacos.png);
+}
+
+#img2 {
+  background-image: url(img/tacorecept.png);
+}
+
+#img3 {
+  background-image: url(img/healthy-tacos.png);
 }
 
 .last-section {
@@ -224,14 +225,14 @@ footer nav a:hover {
   text-shadow: 3px 3px 6px antiquewhite;
 }
 
-.menu-tacos {
+#menu-tacos {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 5px;
 }
 
-.menu-tacos div h2 {
+#menu-tacos div h2 {
   font-family: "Lobster", cursive;
   font-size: xx-large;
 }
@@ -247,6 +248,93 @@ footer nav a:hover {
 
 .even {
   background-color: rgb(255, 249, 249);
+}
+
+.content p {
+  margin-top: 30px;
+}
+
+.switch-spot {
+  display: flex;
+}
+
+.light-dark-mode {
+  margin-left: 50px;
+}
+
+#menu-tacos.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+#menu-tacos.light-mode {
+  background-color: #f0f0f0;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+}
+
+#menu-tacos.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+#menu-tacos.dark-mode {
+  background-color: #1e1e1e;
+  border: 1px solid #333333;
+  border-radius: 8px;
+}
+
+#menu-tacos.dark-mode .odd {
+  background-color: #000000;
+}
+
+#menu-tacos.dark-mode .even {
+  background-color: #191717;
+}
+
+.switch {
+  position: absolute;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
 }
 
 .first-section-contact {
@@ -329,6 +417,11 @@ button:hover {
   background-color: #0056b3;
 }
 
+#map {
+  height: 90vh;
+  width: 100%;
+}
+
 @media screen and (max-width: 400px) {
   ul {
     display: none;
@@ -345,6 +438,11 @@ button:hover {
 
   .image-section {
     flex-direction: column;
+  }
+
+  .img-section-div {
+    width: 80%;
+    height: 600px;
   }
 
   .img-section-pictures {
